@@ -14,7 +14,7 @@ hs.hotkey.bind({'ctrl'}, 'i', keyCode('up'), nil, keyCode('up'))
 hs.hotkey.bind({'ctrl'}, 'l', keyCode('right'), nil, keyCode('right'))
 hs.hotkey.bind({'ctrl'}, 'd', keyCode('forwarddelete'), nil, keyCode('forwarddelete'))
 
--- pageup, pagedown
+-- top, bottom
 hs.hotkey.bind({'cmd', 'ctrl'}, 'i', keyCode('up', {'cmd', 'fn'}), nil, keyCode('up', {'cmd', 'fn'}))
 hs.hotkey.bind({'cmd', 'ctrl'}, 'k', keyCode('down', {'cmd', 'fn'}), nil, keyCode('down', {'cmd', 'fn'}))
 
