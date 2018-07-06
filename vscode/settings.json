@@ -62,6 +62,14 @@
     "[elixir]": {
         "editor.formatOnSave": true
     },
-    "a": "b"
-
-}
+    "a": "b",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "eslint.autoFixOnSave": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "javascript.format.insertSpaceAfterConstructor": true
+  }
