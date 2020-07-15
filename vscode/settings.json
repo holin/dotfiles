@@ -1,75 +1,213 @@
 {
-    // Place your settings in this file to overwrite the default settings
-    "workbench.editor.enablePreview": false,
-    "javascript.validate.enable": false,
-    // "editor.formatOnSave": true,
-
-    // "[javascript]": {
-    //   "editor.formatOnSave": true
-    // },
-
-    // "[json]": {
-    //   "editor.formatOnSave": true
-    // },
-    "editor.minimap.maxColumn": 80,
-    "prettier.singleQuote": true,
-    "prettier.printWidth": 80,
-    "prettier.jsxBracketSameLine": true,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.idea": true,
-        "**/.vscode": true,
-        // "**/deps": true, //mix deps
-        "**/rel": true, //mix projects release folder
-        "**/_build": true,
-        // "**/build": true,
-        "**/dist": true,
-        "**/.svn": true,
-        "**/log": true,
-        "**/.hg": true,
-        "**/.DS_Store": true
-    },
-    "files.trimTrailingWhitespace": true,
-    // Insert snippets when their prefix matches. Works best when 'quickSuggestions' aren't enabled.
-    "editor.tabCompletion": true,
-    "editor.wordWrapColumn": 80,
-
-    "editor.fontSize": 22,
-    "files.associations": {
-        "*.wpy": "vue",
-        "*.vue": "vue",
-        "*.json": "json",
-        "*.erb": "erb",
-        "*.scss.erb": "scss",
-        "*.html.erb": "html",
-        "*.js.erb": "javascript"
-    },
-    "window.zoomLevel": 0,
-    "editor.wordWrap": true,
-    "workbench.welcome.enabled": false,
-    "workbench.colorTheme": "Visual Studio Dark",
-    "[javascript]": {},
-    "editor.tabSize": 2,
-    "editor.renderWhitespace": "all",
-    "explorer.confirmDragAndDrop": false,
-    "extensions.autoUpdate": false,
-
-    "standard.autoFixOnSave": false,
-
-    "[ruby]": {
-        "editor.formatOnSave": true
-    },
-    "[elixir]": {
-        "editor.formatOnSave": true
-    },
-    "a": "b",
-    "eslint.validate": [
+  // Place your settings in this file to overwrite the default settings
+  "workbench.editor.enablePreview": false,
+  "javascript.validate.enable": false,
+  "editor.minimap.maxColumn": 80,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.jsxBracketSameLine": true,
+  "files.exclude": {
+    "*.log": true,
+    "**/_build": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.idea": true,
+    "**/.svn": true,
+    "**/.vscode": true,
+    "**/dist": true,
+    "**/log": true,
+    "**/rel": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "editor.tabCompletion": true,
+  "editor.wordWrapColumn": 80,
+  "editor.fontSize": 24,
+  "files.associations": {
+    "*.wpy": "vue",
+    "*.vue": "vue",
+    "*.json": "json",
+    "*.erb": "erb",
+    "*.scss.erb": "scss",
+    "*.html.erb": "erb",
+    "*.js.erb": "javascript"
+  },
+  "window.zoomLevel": -2,
+  "editor.wordWrap": true,
+  "editor.renderWhitespace": "all",
+  "explorer.confirmDragAndDrop": false,
+  "extensions.autoUpdate": false,
+  "standard.autoFixOnSave": false,
+  "standard.validate": [],
+  "ruby.rubocop.executePath": "~/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/rubocop-0.82.0/exe/rubocop",
+  "ruby.useLanguageServer": true,
+  "ruby.format": "rubocop",
+  "prettier.tabWidth": 2,
+  "[ruby]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "remimarsal.prettier-now"
+  },
+  "[elixir]": {
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.formatOnSave": true
+  },
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Visual Studio Dark",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "explorer.openEditors.visible": 0,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "'JetBrains Mono',Menlo, Monaco, 'Courier New', monospace",
+  "editor.columnSelection": false,
+  "elixirLS.suggestSpecs": false,
+  "elixirLS.dialyzerEnabled": false,
+  "dart.debugExternalLibraries": true,
+  "dart.debugSdkLibraries": true,
+  "prettier.semi": false,
+  "beautify.language": {
+    "js": {
+      "type": [
         "javascript",
-        "javascriptreact",
-        "vue"
+        "json"
+      ],
+      "filename": [
+        ".jshintrc",
+        ".jsbeautifyrc"
+      ]
+    },
+    "css": [
+      "css",
+      "scss"
     ],
-    "eslint.autoFixOnSave": true,
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "javascript.format.insertSpaceAfterConstructor": true
+    "html": {
+      "type": [
+        "htm",
+        "html"
+      ],
+      "filename": [
+        ".html.leex",
+        ".html.eex",
+        ".html"
+      ]
+    },
+  },
+  "beautify.config": {
+    "indent_size": 2,
+    "indent_inner_html": true,
+    "preserve_newlines": true,
+    "unformatted": [
+      "script"
+    ],
+    "void_elements": [
+      "area",
+      "base",
+      "br",
+      "col",
+      "embed",
+      "hr",
+      "img",
+      "input",
+      "keygen",
+      "link",
+      "menuitem",
+      "meta",
+      "param",
+      "source",
+      "track",
+      "wbr",
+      "!doctype",
+      "?xml",
+      "?php",
+      "?=",
+      "basefont",
+      "isindex",
+      "%",
+      "%="
+    ],
+    "inline": [
+      "%=",
+      "%",
+      "a",
+      "abbr",
+      "area",
+      "audio",
+      "b",
+      "bdi",
+      "bdo",
+      "br",
+      "button",
+      "canvas",
+      "cite",
+      "code",
+      "data",
+      "datalist",
+      "del",
+      "dfn",
+      "em",
+      "embed",
+      "i",
+      "iframe",
+      "img",
+      "input",
+      "ins",
+      "kbd",
+      "keygen",
+      "label",
+      "map",
+      "mark",
+      "math",
+      "meter",
+      "noscript",
+      "object",
+      "output",
+      "progress",
+      "q",
+      "ruby",
+      "s",
+      "samp",
+      "select",
+      "small",
+      "span",
+      "strong",
+      "sub",
+      "sup",
+      "svg",
+      "template",
+      "textarea",
+      "time",
+      "u",
+      "var",
+      "video",
+      "wbr",
+      "text",
+      "acronym",
+      "address",
+      "big",
+      "dt",
+      "ins",
+      "strike",
+      "tt"
+    ]
   }
+}

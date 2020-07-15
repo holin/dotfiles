@@ -1,0 +1,4 @@
+-- Programer Dvarok
+-- hs.hotkey.bind({'cmd'}, 'j', keyCode('c', {'cmd'}), nil, keyCode('c', {'cmd'}))
+-- hs.hotkey.bind({'cmd'}, 'k', keyCode('v', {'cmd'}), nil, keyCode('v', {'cmd'}))
+-- hs.hotkey.bind({'cmd'}, 'o', keyCode('s', {'cmd'}), nil, keyCode('s', {'cmd'}))
