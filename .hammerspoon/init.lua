@@ -1,7 +1,7 @@
 
 
 
-require "apps.netease_music"
+-- require "apps.netease_music"
 require "keymap.hhkb"
 
 -- window manager
